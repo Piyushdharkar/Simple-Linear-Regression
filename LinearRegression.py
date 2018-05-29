@@ -54,14 +54,18 @@ yPred = np.dot(xTest, theta.T)
 plt.subplot(331)
 
 plt.scatter(xTest[:, 1], yPred) 
+plt.xlabel("Test x value")
+plt.ylabel("Predicted y value")
 
 plt.subplot(333)
 
 plt.scatter(xTest[:, 1], yTest)
+plt.xlabel("Test x value")
+plt.ylabel("Test y value")
 
 plt.subplot(337)
                                                                       
 plt.plot(range(noOfIterations), costArray)        
-
+plt.title("Cost over all iterations")
 
 
